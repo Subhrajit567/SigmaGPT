@@ -1,4 +1,5 @@
 const API_URL = import.meta.env.VITE_API_URL;
+import blacklogo from "./assets/blacklogo.png";
 import "./Sidebar.css";
 import { useContext, useEffect } from "react";
 import { MyContext } from "./MyContext.jsx";
@@ -68,8 +69,7 @@ function Sidebar() {
     return (
         <section className="sidebar">
             <button onClick={createNewChat}>
-                <img src="src/assets/blacklogo.png" alt="gpt logo" className="logo"></img>
-                <span><i className="fa-solid fa-pen-to-square"></i></span>
+                <img src={blacklogo} alt="gpt logo" className="logo" /><span><i className="fa-solid fa-pen-to-square"></i></span>
             </button>
 
 
@@ -93,7 +93,7 @@ function Sidebar() {
             </ul>
 
             <div className="sign">
-                <p>By ApnaCollege &hearts;</p>
+                <p>By SigmaGpt &hearts;</p>
             </div>
         </section>
     )
